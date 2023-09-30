@@ -1,14 +1,14 @@
 const COMMANDS = [
   {
-    command: "about",
+    command: "About",
     description: "About Me",
   },
   {
-    command: "education",
+    command: "Education",
     description: "My Education",
   },
   {
-    command: "skills",
+    command: "Skills",
     description: "My Tech Skills",
   },
   // {
@@ -16,11 +16,11 @@ const COMMANDS = [
   //   description: "My Tech Projects",
   // },
   {
-    command: "contact",
+    command: "Contact",
     description: "Contact Me",
   },
   {
-    command: "blog",
+    command: "Blog",
     description: "Visit my blog",
   },
   {
@@ -69,6 +69,7 @@ const getContacts = async () => {
 };
 
 export const CONTENTS = {
+  
   help: () =>
     COMMANDS.map(
       (command) => `<div style="display: flex; justify-content: space-between;">
@@ -92,12 +93,11 @@ export const CONTENTS = {
   education:
     () => `I completed my A/Ls at <a href="https://www.anandacollege.edu.lk/" target="_blank">Ananda College,Colombo 10</a> and completed my Bachelor's Degree from <a href="https://www.nsbm.ac.lk/" target="_blank">NSBM Green University town</a>, which is affiliated with <a href="https://www.ucd.ie/" target="_blank">University College Dublin</a>.`,
   skills: () => `
-  <div class="skill"><b>core</b>: Bash,Python,Java,Terraform(Iac),<br /></div>
-  <div class="skill"><b>frameworks</b>: React, NextJS, Django, Express and Laravel<br /></div>
-  <div class="skill"><b>database</b>: MongoDB, PostgreSQL, MySQL, and SQLite<br /></div>
-  I also have knowledge of basic shell scripting and my dotfiles can be found <a href="https://github.com/kavinvalli/.dotfiles" target="_blank">here</a>.
-<br /><br />
-  I also have experience with Mobile Development with Flutter.
+  <br /><br />
+  <div class="skill"><b>core</b>: Bash, Python, Java, Git<br /></div><br /><br />
+  <div class="skill"><b>frameworks</b>: Terraform(Iac), Jenkins, Groovy, Docker, Kubernates, React, NextJS, Laravel,<br /></div><br /><br />
+  <div class="skill"><b>database</b>:MySQL, PostgreSQL <br /></div>
+  <br /><br />
   `,
   projects: getProjects,
   contact: getContacts,
@@ -112,7 +112,7 @@ export const CONTENTS = {
     return "";
   },
 
-  Resume: () => {
+  resume: () => {
     const filePath = '/Avishka_Sooriyapperuma.pdf';
     window.open(filePath, "_blank");
     return "";
@@ -129,3 +129,20 @@ function getAge(dateString) {
 
   return age;
 }
+
+// Function to process user input
+function processInput(CONTENTS) {
+  const lowercasedInput = CONTENTS.toLowerCase();
+
+  // Now use lowercasedInput to compare with commands
+  const matchingCommand = COMMANDS.find((cmd) => cmd.command === lowercasedInput);
+
+  if (matchingCommand) {
+    // Do something with the matching command
+    console.log(`Executing command: ${matchingCommand.command}`);
+  } else {
+    // Handle invalid command
+    console.log("Invalid command");
+  }
+}
+

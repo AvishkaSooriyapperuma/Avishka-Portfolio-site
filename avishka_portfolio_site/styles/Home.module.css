@@ -1,11 +1,11 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.8rem;
+  padding: 0 0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  max-width: 600px;
+  max-width: 100%;
 }
 
 .help {
