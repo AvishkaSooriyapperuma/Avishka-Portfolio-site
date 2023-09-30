@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <h1>
-        avishkasoori:$ <br/> <span className={styles.help}>type help to start</span>
+      avishkasoori:$ <br/> <span className={styles.help}>type help to start&quot;</span>
       </h1>
 
 
