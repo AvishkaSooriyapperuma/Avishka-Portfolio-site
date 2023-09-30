@@ -30,6 +30,11 @@ export default async function handler(req, res) {
         username: "AvishkaSooriyapperuma",
         link: "https://www.linkedin.com/in/avishkasoori/",
       },
+      {
+        medium: "Dev Community",
+        username: "AvishkaSooriyapperuma",
+        link: "https://dev.to/avishkasooriyapperuma",
+      },
     ];
 
     res.json(contactMediums);
