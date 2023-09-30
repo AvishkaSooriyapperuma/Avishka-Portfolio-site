@@ -1,11 +1,11 @@
 .container {
   min-height: 100vh;
   padding: 0 0.8rem;
-  display:inline-flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  max-width: 100%;
+  max-width: 600px;
 }
 
 .help {
