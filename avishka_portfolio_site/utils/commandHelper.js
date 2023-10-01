@@ -81,7 +81,7 @@ export const CONTENTS = {
       <div class="command">Type one of the above to view. For eg. <span style="color: var(--secondary)">about</span></div>`,
   about: () => `My name is Avishka. I am ${getAge(
     "February 24, 2000"
-  )} and I\'m a DevOps Engineer in Proffession
+  )} and I\'m a DevOps Engineer in Profession
     <br/><br/>
     I have worked with various tools such as Jenkins, Ansible, Git and Docker. I have also worked with the AWS cloud platform and worked on automating infrastructure using Terraform and Ansible(Iac). I’m familiar with SQL, Linux, and scripting in Python and Shell.
     <br /><br />
