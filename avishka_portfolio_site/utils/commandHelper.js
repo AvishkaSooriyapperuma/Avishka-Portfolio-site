@@ -96,7 +96,7 @@ export const CONTENTS = {
   <br /><br />
   <div class="skill"><b>core</b>: Bash, Python, Java, Git<br /></div><br /><br />
   <div class="skill"><b>frameworks</b>: Terraform(Iac), Jenkins, Groovy, Docker, Kubernates, React, NextJS, Laravel,<br /></div><br /><br />
-  <div class="skill"><b>Cloud</b>:AWS, Digital Ocean, Azure, OVH <br /></div>
+  <div class="skill"><b>Cloud</b>:AWS, Digital Ocean, Azure, OVH <br /></div><br /><br />
   <div class="skill"><b>database</b>:MySQL, PostgreSQL <br /></div>
   <br /><br />
   `,
