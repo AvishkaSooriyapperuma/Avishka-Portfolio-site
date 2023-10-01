@@ -38,6 +38,13 @@ body {
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  /* Media query for screens up to 767px width (typical mobile devices) */
+  body {
+    background-position: center; /* Center the background image on smaller screens */
+  }
+}
+
 h1 {
   color: var(--primary);
   font-size: 32px;
