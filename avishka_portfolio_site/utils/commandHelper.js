@@ -12,7 +12,7 @@ const COMMANDS = [
     description: "My Tech Skills",
   },
   {
-    command: "projects",
+    command: "Projects",
     description: "My Tech Projects",
   },
   {
