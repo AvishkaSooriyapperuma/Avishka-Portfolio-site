@@ -5,6 +5,7 @@
   --primary: #7243ca;
   --secondary: #2ac3de;
   --background-color: #0f101a;
+  
 }
 
 html,
@@ -23,6 +24,8 @@ body {
 }
 
 body {
+  background-image: url("/background.png");
+  background-size: cover;
   padding: 16px;
   background-color: var(--background-color);
   color: var(--text-color);
